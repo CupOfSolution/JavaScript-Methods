@@ -30,3 +30,38 @@
 
 // console.log(result)         // Output: ['Mango']
 // console.log(MultipleResult) // Output: ['Mango', 'Apple']
+
+
+// /*
+// Slice Methods------------------
+// -- The filter method creates a new array with all elements that pass the test implemented by the provided function.
+
+// -- Here, it will return a new array containing multiple elements from the original array. 
+//    Example: fruits.slice(2, 4) will return ['Mango', 'Apple'].
+
+// -- slice(2, 4) Means: slice(Start index, end index)
+
+// -- The first parameter (2) specifies the start index (inclusive), and the second parameter (4) specifies the end index (exclusive).
+// */
+// const fruits = ['Banana', 'Orange', 'Mango', 'Apple']
+// const result = fruits.slice(2, 4);
+
+// console.log(result)         // Output: ['Mango', 'Apple']
+
+
+/*
+Splice Methods------------------
+-- It can change the main array.
+
+-- splice(2, 4) Means: splice(index, noOfRemovedItems, aditional element)
+
+-- const result = fruits.splice(1, 4, 'fruit'): Using the splice method to remove 4 elements starting from index 1 and replace them with 'fruit'.
+
+-- const result = fruits.splice(1, 4): Here, the splice(1, 4) method removes elements starting from index 1 and removes 4 elements from the array.
+   Example: fruits.splice(1, 4) will remove 'Orange', 'Mango', and 'Apple' from the array.
+*/
+const fruits = ['Banana', 'Orange', 'Mango', 'Apple']
+const result = fruits.splice(1, 4);
+
+console.log(result)         // Output: ['Orange', 'Mango', 'Apple']
+console.log(fruits)         // Output: ['Banana']
