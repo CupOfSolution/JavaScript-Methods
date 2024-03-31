@@ -80,3 +80,33 @@
 
 // console.log(`Concat method -- ${ConcatResult}`); // Output: ['Banana', 'Orange', 'Mango', 'Apple', 'Fruit']
 
+
+// /*
+// Push Methods-------------------
+// -- It can change the main array. Modifies the original array by appending elements.
+
+// -- Syntax: array.push(element1[, ...[, elementN]])
+
+// -- Example: PushFruits.push('Fruit') returns the new length of the array.
+// */
+// const PushFruits = ['Banana', 'Orange', 'Mango', 'Apple'];
+// const PushResult = PushFruits.push('Fruit');
+
+// console.log(`Push method -- ${PushResult}`); // Output: 5
+// console.log(PushFruits);                     // Output: ['Banana', 'Orange', 'Mango', 'Apple', 'Fruit']
+
+
+// /*
+// Reduce Methods-------------------
+// - Iterates over an array and reduces it to a single value.
+// - Syntax: array.reduce(callbackFn[, initialValue])
+
+// - Example:
+//   - ReduceNumber.reduce((total, currValue) => total + currValue, 0)
+//     - Adds up all the numbers in the array starting from an initial value of 0.
+
+// */
+// const ReduceNumber = [1, 2, 3, 4, 5];
+// const ReduceResult = ReduceNumber.reduce((total, currValue) => total + currValue, 0);
+
+// console.log(ReduceResult); // Output: 15
