@@ -10,12 +10,12 @@
 
 // -- findIndex -- It will give only the index of the elements.
 // */
-// const fruits = ['Banana', 'Orange', 'Mango', 'Apple']
-// const result = fruits.find((i) => i === 'Mango');
-// const resultIndex = fruits.findIndex((i) => i === 'Mango');
+// const FindFruits = ['Banana', 'Orange', 'Mango', 'Apple']
+// const FindResult = FindFruits.find((i) => i === 'Mango');
+// const FindResultIndex = FindFruits.findIndex((i) => i === 'Mango');
 
-// console.log(result)         // Output: Mango
-// console.log(resultIndex)    // Output: 2
+// console.log(`Find methods -- ${FindResult}`)         // Output: Mango
+// console.log(FindResultIndex)                         // Output: 2
 
 
 // /*
@@ -24,12 +24,12 @@
 
 // -- Here, it will return multiple elements in a array. 
 // */
-// const fruits = ['Banana', 'Orange', 'Mango', 'Apple']
-// const result = fruits.filter((i) => i === 'Mango');
-// const MultipleResult = fruits.filter((i) => i === 'Mango' || i === 'Apple');
+// const FilterFruits = ['Banana', 'Orange', 'Mango', 'Apple']
+// const FilterResult = FilterFruits.filter((i) => i === 'Mango');
+// const FilterMultipleResult = FilterFruits.filter((i) => i === 'Mango' || i === 'Apple');
 
-// console.log(result)         // Output: ['Mango']
-// console.log(MultipleResult) // Output: ['Mango', 'Apple']
+// console.log(`Filter Methods -- ${FilterResult}`)         // Output: ['Mango']
+// console.log(FilterMultipleResult)                       // Output: ['Mango', 'Apple']
 
 
 // /*
@@ -43,25 +43,40 @@
 
 // -- The first parameter (2) specifies the start index (inclusive), and the second parameter (4) specifies the end index (exclusive).
 // */
-// const fruits = ['Banana', 'Orange', 'Mango', 'Apple']
-// const result = fruits.slice(2, 4);
+// const SliceFruits = ['Banana', 'Orange', 'Mango', 'Apple']
+// const SliceResult = SliceFruits.slice(2, 4);
 
-// console.log(result)         // Output: ['Mango', 'Apple']
+// console.log(`Slice method -- ${SliceResult}`)         // Output: ['Mango', 'Apple']
 
 
-/*
-Splice Methods------------------
--- It can change the main array.
+// /*
+// Splice Methods-------------------
+// -- It can change the main array.
 
--- splice(2, 4) Means: splice(index, noOfRemovedItems, aditional element)
+// -- splice(2, 4) Means: splice(index, noOfRemovedItems, aditional element)
 
--- const result = fruits.splice(1, 4, 'fruit'): Using the splice method to remove 4 elements starting from index 1 and replace them with 'fruit'.
+// -- const result = fruits.splice(1, 4, 'fruit'): Using the splice method to remove 4 elements starting from index 1 and replace them with 'fruit'.
 
--- const result = fruits.splice(1, 4): Here, the splice(1, 4) method removes elements starting from index 1 and removes 4 elements from the array.
-   Example: fruits.splice(1, 4) will remove 'Orange', 'Mango', and 'Apple' from the array.
-*/
-const fruits = ['Banana', 'Orange', 'Mango', 'Apple']
-const result = fruits.splice(1, 4);
+// -- const result = fruits.splice(1, 4): Here, the splice(1, 4) method removes elements starting from index 1 and removes 4 elements from the array.
+//    Example: fruits.splice(1, 4) will remove 'Orange', 'Mango', and 'Apple' from the array.
+// */
+// const SpliceFruits = ['Banana', 'Orange', 'Mango', 'Apple']
+// const SpliceResult = SpliceFruits.splice(1, 4);
 
-console.log(result)         // Output: ['Orange', 'Mango', 'Apple']
-console.log(fruits)         // Output: ['Banana']
+// console.log(`Splice method -- ${SpliceResult}`)         // Output: ['Orange', 'Mango', 'Apple']
+// console.log(SpliceFruits)                               // Output: ['Banana']
+
+
+// /*
+// Concat Methods-------------------
+// -- The concat method is used to merge two or more arrays together, creating a new array without modifying the original arrays.
+
+// -- It can't change the main array.
+
+// -- Here, fruits.concat('Fruit') creates a new array by appending the string 'Fruit' to the end of the fruits array.
+// */
+// const ConcatFruits = ['Banana', 'Orange', 'Mango', 'Apple'];
+// const ConcatResult = ConcatFruits.concat('Fruit');
+
+// console.log(`Concat method -- ${ConcatResult}`); // Output: ['Banana', 'Orange', 'Mango', 'Apple', 'Fruit']
+
