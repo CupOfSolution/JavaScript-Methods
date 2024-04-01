@@ -39,7 +39,7 @@ Slice Methods------------------
 -- Here, it will return a new array containing multiple elements from the original array. 
    Example: fruits.slice(2, 4) will return ['Mango', 'Apple'].
 
--- slice(2, 4) Means: slice(Start index, end index)
+-- slice(2, 4) Means: slice(Start index, before end index)
 
 -- The first parameter (2) specifies the start index (inclusive), and the second parameter (4) specifies the end index (exclusive).
 */
